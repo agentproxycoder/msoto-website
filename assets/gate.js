@@ -16,10 +16,11 @@
     wrap.setAttribute('role', 'dialog');
     wrap.setAttribute('aria-modal', 'true');
     wrap.setAttribute('aria-labelledby', 'gate-title');
-    wrap.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#254068;display:flex;align-items:center;justify-content:center;padding:24px;visibility:visible;font-family:Inter,system-ui,sans-serif';
+    wrap.style.cssText = 'position:fixed;inset:0;z-index:9999;background:#254068;display:flex;flex-direction:column;gap:28px;align-items:center;justify-content:center;padding:24px;visibility:visible;font-family:Inter,system-ui,sans-serif';
     wrap.innerHTML =
+      '<img src="assets/mso-logo-white.svg" alt="Maryland Society of Otolaryngologists" style="height:96px;width:auto;display:block">' +
       '<form id="gate-form" style="background:#fff;border-radius:12px;padding:36px;max-width:380px;width:100%;box-sizing:border-box;display:flex;flex-direction:column;gap:14px;box-shadow:0 10px 30px rgba(0,0,0,.25)">' +
-      '<img src="assets/favicon.png" alt="" width="56" height="56" style="border-radius:8px">' +
+      
       '<h1 id="gate-title" style="margin:0;font-size:22px;color:#254068;font-family:Archivo,Inter,sans-serif">Maryland Society of Otolaryngologists</h1>' +
       '<p style="margin:0;font-size:15px;color:#3A4A5C">This site is in preview. Enter the password to continue.</p>' +
       '<label for="gate-pw" style="font-size:15px;font-weight:600;color:#254068">Password</label>' +
